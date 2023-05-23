@@ -2,13 +2,16 @@
 // import reactLogo from "./assets/react.svg";
 // import viteLogo from "/vite.svg";
 import "./App.css";
+import Illustration from "./components/Illustration";
 
 function App() {
   return (
-    <h1>:)</h1>
-  )
+    <>
+      <h1>:)</h1>
+      <Illustration />
+    </>
+  );
 }
-
 
 // --- Original Vite skabelon: ---
 
