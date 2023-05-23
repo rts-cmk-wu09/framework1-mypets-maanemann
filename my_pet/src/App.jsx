@@ -3,12 +3,13 @@
 // import viteLogo from "/vite.svg";
 import "./App.css";
 import Illustration from "./components/Illustration";
+import Intro from "./components/Intro";
 
 function App() {
   return (
     <>
-      <h1>:)</h1>
       <Illustration />
+      <Intro />
     </>
   );
 }

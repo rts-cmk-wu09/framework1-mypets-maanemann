@@ -1,13 +1,7 @@
-
-import illuSrc from '../assets/illustration_animal.png';
+import illuSrc from "../assets/illustration_animal.png";
 
 const Illustration = () => {
-  return (
-    <>
-      <img src={illuSrc} alt={"Illustration"} />
-      <p>jek</p>
-    </>
-  )
+  return <img src={illuSrc} alt={"Illustration"} />;
 };
 
 export default Illustration;
