@@ -1,9 +1,12 @@
 // import { useState } from "react";
 // import reactLogo from "./assets/react.svg";
 // import viteLogo from "/vite.svg";
+import styled, { css } from "styled-components";
 import "./App.css";
 import Illustration from "./components/Illustration";
 import Intro from "./components/Intro";
+
+
 
 function App() {
   return (
