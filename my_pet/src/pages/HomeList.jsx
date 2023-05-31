@@ -1,5 +1,5 @@
 const HomeList = () => {
-    return ( 
+    return ( <p>content</p>
         // HomeHeader
             // ProfilePeak
                 // ProfilePic
