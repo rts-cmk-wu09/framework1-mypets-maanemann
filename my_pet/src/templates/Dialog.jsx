@@ -4,18 +4,6 @@ import Intro from "../components/Intro";
 const StyledDiv = styled.div`
   margin: 0 1.5rem;
 `;
-const StyledBut = styled.button`
-  border: none;
-  cursor: pointer;
-  font-size: 1rem;
-  margin: 106px auto 46px auto;
-  width: 100%;
-  height: 44px;
-  border-radius: 10rem;
-  background-color: #57419d;
-  color: white;
-  /* font-weight: 700; */
-`;
 const PageDots = styled.div`
   margin: 2rem auto 0 auto;
   width: fit-content;
@@ -33,7 +21,20 @@ const ActDot = styled.div`
   height: 3px;
   background-color: rgb(85, 51, 234);
   border-radius: 100px;
-`
+`;
+const StyledBut = styled.button`
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 106px auto 46px auto;
+  width: 100%;
+  height: 44px;
+  border-radius: 10rem;
+  background-color: #57419d;
+  color: white;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3), -10px -10px 30px #ffffff;
+  /* font-weight: 700; */
+`;
 
 const Dialog = () => {
   return (
