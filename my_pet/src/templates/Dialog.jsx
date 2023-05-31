@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Intro from "../components/Intro";
+import HomeList from "../pages/HomeList";
 
 const StyledDiv = styled.div`
   margin: 0 1.5rem;
@@ -26,12 +27,12 @@ const StyledBut = styled.button`
   border: none;
   cursor: pointer;
   font-size: 1rem;
+  color: white;
   margin: 106px auto 46px auto;
   width: 100%;
   height: 44px;
   border-radius: 10rem;
   background-color: #57419d;
-  color: white;
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3), -10px -10px 30px #ffffff;
   /* font-weight: 700; */
 `;
@@ -45,7 +46,9 @@ const Dialog = () => {
         <InactDot></InactDot>
         <ActDot></ActDot>
       </PageDots>
-      <StyledBut>Skip</StyledBut>
+      <a href="home">
+        <StyledBut>Skip</StyledBut>
+      </a>
     </StyledDiv>
   );
 };
