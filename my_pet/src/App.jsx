@@ -4,7 +4,7 @@
 import styled, { css } from "styled-components";
 import "./App.css";
 import Illustration from "./components/Illustration";
-import Intro from "./components/Intro";
+import Dialog from "./templates/dialog";
 
 
 
@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <Illustration />
-      <Intro />
+      <Dialog />
     </>
   );
 }
