@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import Intro from "../components/Intro";
+import { Link } from "react-router-dom";
 import HomeList from "../pages/HomeList";
+import React from "react";
 
 const StyledDiv = styled.div`
   margin: 0 1.5rem;
@@ -46,9 +48,12 @@ const Dialog = () => {
         <InactDot></InactDot>
         <ActDot></ActDot>
       </PageDots>
-      <a href="home">
+      <Link to="home">
         <StyledBut>Skip</StyledBut>
-      </a>
+      </Link>
+      {/* <a href="home">
+        <StyledBut>Skip</StyledBut>
+      </a> */}
     </StyledDiv>
   );
 };
