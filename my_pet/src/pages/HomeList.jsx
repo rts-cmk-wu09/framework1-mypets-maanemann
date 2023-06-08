@@ -1,6 +1,8 @@
-import { Link } from "react-router-dom";
 import useAxios from "../useAxios";
 import styled from "styled-components";
+import HomeHeader from "../components/HomeHeader";
+import PetList from "../components/PetList";
+import { Link } from "react-router-dom";
 
 const StyledLink = styled(Link)`
     color: lightcoral;
@@ -10,16 +12,20 @@ const ListView = (props) => {
   const [data, error, loading] = useAxios();
   return (
     <>
-      {error && <p>Der opstod en fejl...</p>}
-      {loading && <p>loading...</p>}
-      {data && (
+        <HomeHeader />
+        <PetList />
+
+        {/* Troels' mystiske kode : */}
+        {error && <p>Der opstod en fejl...</p>}
+        {loading && <p>loading...</p>}
+        {data && (
         <ul style={{ listStyleType: "none" }}>
-          {data.animals.map((animal) => (
+            {data.animals.map((animal) => (
             <li key={animal.id}>{animal.name}</li>
-          ))}
+            ))}
         </ul>
-      )}
-      <StyledLink to="/detailsview">Link</StyledLink>
+        )}
+        <StyledLink to="/detailsview">Link</StyledLink>
     </>
   );
 };

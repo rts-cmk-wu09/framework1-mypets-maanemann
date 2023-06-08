@@ -1,5 +1,5 @@
 const HomeHeader = () => {
-    return ( <h1>ehehehhhh</h1> );
+    return ( <h1>Her kommer en header</h1> );
 }
  
 export default HomeHeader;
