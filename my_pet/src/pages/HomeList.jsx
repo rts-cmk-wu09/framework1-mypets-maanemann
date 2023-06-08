@@ -1,17 +1,34 @@
-import HomeHeader from "../components/HomeHeader";
+import { Link } from "react-router-dom";
+import useAxios from "../useAxios";
+import styled from "styled-components";
 
-const HomeList = () => {
+const StyledLink = styled(Link)`
+    color: lightcoral;
+`
+
+const ListView = (props) => {
+  const [data, error, loading] = useAxios();
   return (
     <>
-      <p>content</p>
-      <HomeHeader />
+      {error && <p>Der opstod en fejl...</p>}
+      {loading && <p>loading...</p>}
+      {data && (
+        <ul style={{ listStyleType: "none" }}>
+          {data.animals.map((animal) => (
+            <li key={animal.id}>{animal.name}</li>
+          ))}
+        </ul>
+      )}
+      <StyledLink to="/detailsview">Link</StyledLink>
     </>
   );
 };
 
-export default HomeList;
+export default ListView;
 
-// WIREFRAME :
+
+// --- WIREFRAME : ---
+// 
     // HomeHeader
         // ProfilePeak
             // ProfilePic
@@ -42,3 +59,19 @@ export default HomeList;
             // PopBut (props)
         // ProfBut
             // PopBut (props)
+
+
+// --- Min gamle kode: ---
+// 
+// import HomeHeader from "../components/HomeHeader";
+// 
+// const HomeList = () => {
+//   return (
+//     <>
+//       <p>content</p>
+//       <HomeHeader />
+//     </>
+//   );
+// };
+// 
+// export default HomeList;
