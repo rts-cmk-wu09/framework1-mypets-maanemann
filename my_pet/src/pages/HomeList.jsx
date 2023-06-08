@@ -13,7 +13,8 @@ const ListView = (props) => {
   return (
     <>
         <HomeHeader />
-        <PetList />
+        {/* Her gik jeg i gang med at bygge et komponent med den data, Troels bruger nedenfor, men det resulterer i 404 og en masse fejl i konsollen: */}
+        {/* <PetList /> */}
 
         {/* Troels' mystiske kode : */}
         {error && <p>Der opstod en fejl...</p>}

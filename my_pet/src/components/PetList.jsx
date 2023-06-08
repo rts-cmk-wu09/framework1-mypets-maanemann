@@ -1,8 +1,16 @@
+import useAxios from "../useAxios";
+// For later:
+// import { Link } from "react-router-dom";
+
 const PetList = () => {
-    return ( <ul>
-        <li>dyr1</li>
-        <li>dyr2</li>
-    </ul> );
-}
- 
+  const [data] = useAxios();
+  return (
+    <ul style={{ listStyleType: "none" }}>
+      {data.animals.map((animal) => (
+        <li key={animal.id}>{animal.name}</li>
+      ))}
+    </ul>
+  );
+};
+
 export default PetList;
