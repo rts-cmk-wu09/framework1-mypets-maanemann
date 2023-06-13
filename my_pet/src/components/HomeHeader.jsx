@@ -1,5 +1,12 @@
+import TopBar from "./TopBar";
+
 const HomeHeader = () => {
-    return ( <h1>Her kommer en header</h1> );
-}
- 
+  return (
+    <>
+      <TopBar />
+      {/* <PetTypes /> */}
+    </>
+  );
+};
+
 export default HomeHeader;

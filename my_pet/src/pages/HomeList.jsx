@@ -13,8 +13,7 @@ const ListView = (props) => {
   return (
     <>
         <HomeHeader />
-        {/* Her gik jeg i gang med at bygge et komponent med den data, Troels bruger nedenfor, men det resulterer i 404 og en masse fejl i konsollen: */}
-        {/* <PetList /> */}
+        <PetList />
 
         {/* Troels' mystiske kode : */}
         {error && <p>Der opstod en fejl...</p>}
@@ -22,7 +21,7 @@ const ListView = (props) => {
         {data && (
         <ul style={{ listStyleType: "none" }}>
             {data.animals.map((animal) => (
-            <li key={animal.id}>{animal.name}</li>
+            <li key={animal.id}>{animal.name} {animal.type}</li>
             ))}
         </ul>
         )}
@@ -32,40 +31,6 @@ const ListView = (props) => {
 };
 
 export default ListView;
-
-
-// --- WIREFRAME : ---
-// 
-    // HomeHeader
-        // ProfilePeak
-            // ProfilePic
-                // PopBut (props)
-            // CurrLocation
-            // Bell
-                // PopBut (props)
-        // PetTypes
-            // CatsBut etc..
-                // PopBut (props)
-    // PetList
-        // GreyhCard
-            // PetImg (props)
-            // PetTitle (props)
-            // PetLoca (props)
-            // PetDescr (props)
-            // HeartBut
-                // PopBut (props)
-        // DoberCard
-            // Etc...
-        // Etc..
-    // HomeFooter
-        // HomeBut
-            // PopBut (props)
-        // MessBut
-            // PopBut (props)
-        // FaveBut
-            // PopBut (props)
-        // ProfBut
-            // PopBut (props)
 
 
 // --- Min gamle kode: ---
