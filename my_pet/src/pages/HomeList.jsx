@@ -25,7 +25,7 @@ const ListView = (props) => {
             ))}
         </ul>
         )}
-        <StyledLink to="/detailsview">Link</StyledLink>
+        <StyledLink to="/#">Link</StyledLink>
     </>
   );
 };
