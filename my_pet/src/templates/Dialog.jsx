@@ -51,9 +51,6 @@ const Dialog = () => {
       <Link to="home">
         <StyledBut>Skip</StyledBut>
       </Link>
-      {/* <a href="home">
-        <StyledBut>Skip</StyledBut>
-      </a> */}
     </StyledDiv>
   );
 };
