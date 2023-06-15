@@ -1,9 +1,4 @@
 .popBut {
-  /* width: 2rem;
-    height: 2rem;
-    background: coral;
-    border: 3px solid pink; */
-
   cursor: pointer;
   border-radius: 10rem;
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3), -10px -10px 30px #ffffff;

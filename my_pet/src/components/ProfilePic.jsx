@@ -1,10 +1,9 @@
 import styled from "styled-components";
 import "../css/popBut.css";
+import "../css/popBut__sq-la.css";
 import profPic from "../assets/profile_pic.png";
 
 const StyledDiv = styled.div`
-  width: 40px;
-  height: 40px;
   padding: 1.5px;
 `;
 
@@ -17,7 +16,7 @@ const StyledImg = styled.img`
 const ProfilePic = () => {
   // return <PopBut />;
   return (
-    <StyledDiv className="popBut">
+    <StyledDiv className="popBut popBut__sq-la">
       <StyledImg src={profPic} alt="" />
     </StyledDiv>
   );
