@@ -16,6 +16,7 @@
   --dark-accent: #57419D;
   --bright-accent: #5533EA;
   --select-arrow: var(--dark-accent);
+  --color-text: #7878AB;
 }
 img {
   display: block;
