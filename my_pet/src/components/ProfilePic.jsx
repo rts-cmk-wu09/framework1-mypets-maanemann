@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import "../css/popBut.css";
-import "../css/popBut__sq-la.css";
 import profPic from "../assets/profile_pic.png";
 
 const StyledDiv = styled.div`

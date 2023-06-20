@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import Intro from "../components/Intro";
 import { Link } from "react-router-dom";
-import HomeList from "../pages/HomeList";
 import React from "react";
 
 const StyledDiv = styled.div`

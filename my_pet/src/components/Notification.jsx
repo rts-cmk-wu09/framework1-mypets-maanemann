@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import "../css/popBut.css";
-import "../css/popBut__sq-la.css";
 
 const StyledDiv = styled.div`
   justify-self: end;

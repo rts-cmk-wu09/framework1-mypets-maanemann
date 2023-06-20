@@ -3,3 +3,14 @@
   border-radius: 10rem;
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3), -10px -10px 30px #ffffff;
 }
+
+.popBut__sq-la {
+  width: 40px;
+  height: 40px;
+}
+
+.popBut__card {
+  cursor: pointer;
+  border-radius: 1rem;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3), -10px -10px 30px #ffffff;
+}

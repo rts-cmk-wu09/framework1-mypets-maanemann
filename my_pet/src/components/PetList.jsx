@@ -1,12 +1,28 @@
+import styled from "styled-components";
 import useAxios from "../useAxios";
+import PetCard from "./PetCard";
 // For later:
 // import { Link } from "react-router-dom";
 
-const PetList = () => {
-  return ( <></> );
-}
+const StyledDiv = styled.div`
+  margin: 0 1.5rem 2.75rem;
+  display: grid;
+  gap: 1.5rem;
+`
 
-{/* Her gik jeg i gang med at bygge et komponent med den data, Troels bruger nedenfor, men det resulterer i 404 og en masse fejl i konsollen : */}
+const PetList = () => {
+  return (
+    <StyledDiv>
+      <PetCard />
+      <PetCard />
+      <PetCard />
+    </StyledDiv>
+  );
+};
+
+{
+  /* Her gik jeg i gang med at bygge et komponent med den data, Troels bruger nedenfor, men det resulterer i 404 og en masse fejl i konsollen : */
+}
 // const PetList = () => {
 //   const [data] = useAxios();
 //   return (

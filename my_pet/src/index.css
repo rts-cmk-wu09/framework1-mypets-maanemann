@@ -24,7 +24,7 @@ img {
 body {
   max-width: 375px;
   margin: 0 auto;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #f5f5fa;
 }
 a {
