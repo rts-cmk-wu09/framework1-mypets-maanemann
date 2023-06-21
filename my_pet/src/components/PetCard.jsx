@@ -16,17 +16,16 @@ const StyledArticle = styled.article`
 
 const StyledCiLoca = styled(CiLocationOn)`
   color: var(--bright-accent);
-`
+`;
 
-const PetCard = () => {
+const PetCard = ({ name }) => {
   return (
     <StyledArticle className="popBut__card">
       <img src={dog} alt="A pet" />
       <div>
-        <h2>Hund</h2>
+        <h2>{name}</h2>
         <p>
           <StyledCiLoca></StyledCiLoca>
-          {/* <CiLocationOn /> */}
           New York City
         </p>
         <p>This is a story about a dog. The dog is nice and brown.</p>

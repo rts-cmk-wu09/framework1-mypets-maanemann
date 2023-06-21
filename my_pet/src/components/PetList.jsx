@@ -13,9 +13,9 @@ const StyledDiv = styled.div`
 const PetList = () => {
   return (
     <StyledDiv>
-      <PetCard />
-      <PetCard />
-      <PetCard />
+      <PetCard name={"Gordon Freeman"} />
+      <PetCard name={"Alyx Vance"} />
+      <PetCard name={"Barney Calhoun"} />
     </StyledDiv>
   );
 };
