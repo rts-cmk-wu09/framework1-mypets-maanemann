@@ -8,15 +8,22 @@ const StyledDiv = styled.div`
   margin: 0 1.5rem 2.75rem;
   display: grid;
   gap: 1.5rem;
-`
+`;
 
 const PetList = () => {
+  const [data, error, loading] = useAxios();
   return (
-    <StyledDiv>
-      <PetCard name={"Gordon Freeman"} />
-      <PetCard name={"Alyx Vance"} />
-      <PetCard name={"Barney Calhoun"} />
-    </StyledDiv>
+    <>
+      {error && <p>Der opstod en fejl...</p>}
+      {loading && <p>loading...</p>}
+      {data && (
+        <StyledDiv>
+          {data.animals.map((animal) => (
+            <PetCard key={animal.id} name={animal.name} location={animal.contact.address.city} description={animal.description} id={animal.id} />
+          ))}
+        </StyledDiv>
+      )}
+    </>
   );
 };
 

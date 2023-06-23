@@ -5,6 +5,7 @@ import StartPage from "./pages/StartPage";
 import HomeList from "./pages/HomeList";
 import ErrorView from "./pages/ErrorView";
 import "./index.css";
+import DetailsView from "./pages/DetailsView";
 import {
   createBrowserRouter,
   createRoutesFromElements,
@@ -17,6 +18,7 @@ const router = createBrowserRouter(
     <Route path="/" element={<App />} errorElement={<ErrorView />}>
       <Route index element={<StartPage />} />
       <Route path="/home" element={<HomeList />} />
+      <Route path="/details/:id" element={<DetailsView />} />
     </Route>
   )
 );
